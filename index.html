@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Pagina de login</title>
+</head>
+<body>
+    <main class="container">
+        <form id="formCadastro">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input placeholder="Nome Completo" type="text" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input id="cpf" placeholder="CPF (Ex: 000.000.000-00)" type="text" required maxlength="14">
+                <i class='bx bxs-id-card'></i>
+                <p id="cpf-error" style="color: #ff3333; font-size: 12px; margin-top: 5px; display: none;">CPF inválido!</p>
+            </div>
+
+            <div class="input-box">
+                <input placeholder="E-mail" type="email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+             <div class="input-box">
+                <input id="senha" placeholder="Senha" type="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+              <div class="input-box">
+                <input id="confirmarSenha" placeholder="Confirmar Senha" type="password" required>
+                <i class='bx bxs-lock-alt'></i>
+                <p id="senha-error" style="color: #ff3333; font-size: 12px; margin-top: 5px; display: none;">As senhas não coincidem!</p>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox"> Lembrar-me
+                </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="login">Entrar</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
