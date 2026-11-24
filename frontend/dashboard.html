@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<body class="dashboard-body">
+    
+    <header class="dash-header">
+        <h1>Painel de Controle</h1>
+        <button id="btn-sair" class="btn-sair">
+            Sair <i class='bx bx-log-out'></i>
+        </button>
+    </header>
+
+    <main class="dash-container">
+        <div class="dash-title">
+            <h2>Usuários Cadastrados</h2>
+        </div>
+
+        <div class="table-responsive">
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>CPF</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-usuarios">
+                    <!-- O JavaScript vai preencher essa tabela aqui -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
